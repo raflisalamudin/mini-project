@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Quote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="quote" name="show-quote">
+      <div style="margin-bottom: 0.5rem">
+        <label for="quote">Quote :</label>
+        <input type="text" name="quote" id="quote" placeholder="Tulis quote anda" required />
+      </div>
+      <div style="margin-bottom: 1rem">
+        <label for="quote">Creator :</label>
+        <input type="text" name="creator" id="creator" placeholder="Tulis nama anda" />
+      </div>
+
+      <!--  -->
+      <div class="container">
+        <select class="select" id="align">
+          <option value="">Pilih perataan teks</option>
+          <option value="left">Rata Kiri</option>
+          <option value="center">Rata Tengah</option>
+          <option value="right">Rata Kanan</option>
+        </select>
+        <select class="select" id="font">
+          <option value="">Pilih Font</option>
+          <option value="poppins">Poppins</option>
+          <option value="inter">Inter</option>
+          <option value="indie-flower">Indie Flower</option>
+        </select>
+        <button type="submit" class="btn btn-primary" onclick="kirim()">Tampilkan</button>
+      </div>
+    </form>
+
+    <div class="container-quote">
+      <div class="circle-content">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+      </div>
+      <p class="show" id="tampilkan"></p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

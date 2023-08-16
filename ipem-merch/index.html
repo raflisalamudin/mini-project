@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPEM Merch</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">IPEM Merch</h2>
+          <p class="sub-heading">T-Shirt & Hoodie</p>
+        </div>
+        <div class="features feature-1">
+          <h3 class="price">IDR 150K</h3>
+          <p class="item">T-Shirt</p>
+        </div>
+        <div class="features feature-2">
+          <h3 class="price">IDR 250K</h3>
+          <p class="item">Hoodie</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <h1>IPEM Merch</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+
+      <section class="servives">
+        <div class="service">
+          <div class="icon">👕</div>
+          <h3>Custom T-Shirt</h3>
+          <p>Selain desain T-Shirt di atas, kalian juga bisa desain T-Shirt versi kalian sendiri loh!!</p>
+        </div>
+        <div class="service">
+          <div class="icon">🧥</div>
+          <h3>Custom Hoodie</h3>
+          <p>Selain desain Hoodie di atas, kalian juga bisa desain T-Shirt versi kalian sendiri loh!!</p>
+        </div>
+        <div class="service">
+          <div class="icon">✨</div>
+          <h3>Merchandise</h3>
+          <p>Buruan sebelum kehabisan langsung aja di order Merchandisenya. Belum jadi anak IPEM kalau belum punya Merchandise khas IPEM</p>
+        </div>
+      </section>
+      <section class="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/200x200" alt="" />
+        <img src="https://source.unsplash.com/random/201x201" alt="" />
+        <img src="https://source.unsplash.com/random/202x202" alt="" />
+        <img src="https://source.unsplash.com/random/203x203" alt="" />
+        <img src="https://source.unsplash.com/random/204x204" alt="" />
+        <img src="https://source.unsplash.com/random/205x205" alt="" />
+        <img src="https://source.unsplash.com/random/206x206" alt="" />
+        <img src="https://source.unsplash.com/random/207x207" alt="" />
+        <img src="https://source.unsplash.com/random/208x208" alt="" />
+        <img src="https://source.unsplash.com/random/209x209" alt="" />
+        <img src="https://source.unsplash.com/random/210x210" alt="" />
+        <img src="https://source.unsplash.com/random/211x211" alt="" />
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle input");
+      const nav = document.querySelector("nav ul");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
